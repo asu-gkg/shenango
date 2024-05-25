@@ -5,6 +5,7 @@ set -e
 # Initialize dpdk module
 git submodule init
 git submodule update --recursive
+git checkout 78b04aaf77d2d429b79373a696ff30adedc7c327
 
 # Apply driver patches
 patch -p 1 -d dpdk/ < ixgbe_19_11.patch
